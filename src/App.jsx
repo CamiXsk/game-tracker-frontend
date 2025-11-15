@@ -18,6 +18,7 @@ function App() {
 
   // Función para cargar los juegos 
   const fetchJuegos = () => {
+    // Hacemos la petición a la URL del backend
     fetch("http://localhost:5000/api/juegos")
       .then((res) => {
         if (!res.ok) {
