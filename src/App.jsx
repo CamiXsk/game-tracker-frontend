@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-// CORRECCIÓN FINAL: Se elimina la extensión .jsx de las importaciones. 
-// Esta es la convención estándar de React para resolver el path de los componentes.
+//importa rutas 
 import ListaReseñas from "./components/ListaReseñas/";
 import FormularioReseña from "./components/FormularioReseña/";
 import TarjetaJuego from "./components/TarjetaJuego/";
