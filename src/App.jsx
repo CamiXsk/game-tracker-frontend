@@ -21,6 +21,7 @@ function App() {
     // Hacemos la petición a la URL del backend
     fetch("http://localhost:5000/api/juegos")
       .then((res) => {
+        //revisa la respuesta
         if (!res.ok) {
           throw new Error('La respuesta de la red no fue correcta.');
         }
