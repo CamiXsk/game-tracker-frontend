@@ -34,7 +34,7 @@ function App() {
       .catch((err) => console.error("❌ Error al cargar juegos:", err));
   };
   
-  // Función para cargar las reseñas
+  // Función para cargar las reseñas (igual que el fecth anterior)
   const fetchReseñas = () => {
     fetch("http://localhost:5000/api/reseñas")
       .then((res) => {
