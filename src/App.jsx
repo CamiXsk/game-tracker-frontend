@@ -25,7 +25,7 @@ function App() {
         if (!res.ok) {
           throw new Error('La respuesta de la red no fue correcta.');
         }
-        return res.json();
+        return res.json(); //Convierte la respuesta en formato JSON
       })
       .then((data) => {
         console.log("✅ Datos recibidos del backend (Juegos):", data);
