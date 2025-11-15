@@ -61,7 +61,7 @@ function FormularioReseña({ juegos, onReseñaAgregada }) {
                 throw new Error(data.message || 'Error al guardar la reseña en el servidor.');
             }
 
-            // Éxito:
+            
             // Llama a la función de ListaReseñas para actualizar la lista de reseñas
             onReseñaAgregada(data); 
             setFormData(INITIAL_STATE); // Limpia el formulario
@@ -123,6 +123,7 @@ function FormularioReseña({ juegos, onReseñaAgregada }) {
     };
 
     return (
+         // El formulario completo
         <form onSubmit={handleSubmit} style={style.form}>
             {error && <p style={style.error}>{error}</p>}
 
