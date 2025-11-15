@@ -10,7 +10,7 @@ const INITIAL_STATE = {
     recomendaria: true, // Si o No
 };
 
-// Recibe 'juegos' (lista de App.jsx) y 'onReseñaAgregada' (función de ListaReseñas.jsx)
+// Recibe 'juegos' (lista de App.jsx) y 'onReseñaAgregada' 
 function FormularioReseña({ juegos, onReseñaAgregada }) {
     const [formData, setFormData] = useState(INITIAL_STATE);
     const [isSubmitting, setIsSubmitting] = useState(false);
