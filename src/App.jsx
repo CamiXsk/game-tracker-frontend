@@ -51,7 +51,7 @@ function App() {
   };
 
 
-  // Cargar juegos y reseñas al montar el componente
+  // Cargar juegos y reseñas 
   useEffect(() => {
     fetchJuegos();
     fetchReseñas(); // Se cargan las reseñas al inicio
@@ -61,7 +61,7 @@ function App() {
   const agregarJuego = (e) => {
     e.preventDefault();
 
-    // Mapeamos las claves del formulario (en español) a las claves que el backend (GameModel) espera (en inglés)
+    // Mapeamos las claves del formulario 
     const juegoParaEnviar = {
       name: nuevoJuego.titulo, 
       platform: nuevoJuego.plataforma, 
@@ -70,7 +70,7 @@ function App() {
     };
     
     fetch("http://localhost:5000/api/juegos", {
-      method: "POST",
+      method: "POST", /// Le decimos al backend que vamos a CREAR algo
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(juegoParaEnviar),
     })
