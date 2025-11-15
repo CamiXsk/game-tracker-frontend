@@ -5,18 +5,18 @@ import FormularioReseña from "./components/FormularioReseña/";
 import TarjetaJuego from "./components/TarjetaJuego/";
 
 function App() {
+  //guardamos los datos que vienen del backend 
   const [juegos, setJuegos] = useState([]);
-  // Se añade el estado para las reseñas
   const [reseñas, setReseñas] = useState([]); 
   const [nuevoJuego, setNuevoJuego] = useState({
-    // Usamos las variables del formulario en español
+    // Usamos las variables del formulario en español 
     titulo: "", 
     plataforma: "",
     horasJugadas: "",
     imagenPortada: "",
   });
 
-  // Función para cargar los juegos (Usada para llenar el menú desplegable)
+  // Función para cargar los juegos 
   const fetchJuegos = () => {
     fetch("http://localhost:5000/api/juegos")
       .then((res) => {
